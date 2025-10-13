@@ -1,0 +1,1 @@
+This follows a Project from Boot.dev to build a simple Asteroids Game with Python and PyGame
