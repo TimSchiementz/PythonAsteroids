@@ -1,9 +1,9 @@
 import pygame
 
-from asteroidfield import AsteroidField
+from game_objects.asteroidfield import AsteroidField
 from constants import *
-from player import Player
-from asteroid import Asteroid
+from game_objects.player import Player
+from game_objects.asteroid import Asteroid
 
 def main():
 
