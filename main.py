@@ -32,6 +32,12 @@ def main():
 
 
         updatable.update(dt)
+
+        for asteroid in asteroids:
+            if player.collission_check(asteroid):
+                print("Collision!")
+                return
+
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
