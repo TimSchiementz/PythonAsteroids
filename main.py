@@ -44,7 +44,7 @@ def main():
                 return
             for shot in shots:
                 if shot.collission_check(asteroid):
-                    asteroid.kill()
+                    asteroid.split()
                     shot.kill()
 
         for event in pygame.event.get():
