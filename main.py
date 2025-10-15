@@ -42,6 +42,10 @@ def main():
             if player.collission_check(asteroid):
                 print("Collision!")
                 return
+            for shot in shots:
+                if shot.collission_check(asteroid):
+                    asteroid.kill()
+                    shot.kill()
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
